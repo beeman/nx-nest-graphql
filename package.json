@@ -27,7 +27,9 @@
   },
   "private": true,
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "@nestjs/common": "^7.0.9",
+    "@nestjs/config": "^0.4.0",
     "@nestjs/core": "^7.0.9",
     "@nestjs/graphql": "^7.3.4",
     "@nestjs/platform-express": "^7.0.9",
@@ -42,6 +44,7 @@
     "@nrwl/nest": "^9.2.3",
     "@nrwl/node": "9.2.3",
     "@nrwl/workspace": "9.2.3",
+    "@types/hapi__joi": "^16.0.12",
     "@types/jest": "25.1.4",
     "@types/node": "~8.9.4",
     "@typescript-eslint/eslint-plugin": "2.19.2",
