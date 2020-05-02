@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-nest-graphql/core": ["libs/core/src/index.ts"]
+      "@nx-nest-graphql/core": ["libs/core/src/index.ts"],
+      "@nx-nest-graphql/data": ["libs/data/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
