@@ -1,5 +1,5 @@
 {
-  "npmScope": "nx-nest-starter",
+  "npmScope": "nx-nest-graphql",
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": {

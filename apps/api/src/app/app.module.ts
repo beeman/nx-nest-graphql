@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common'
-import { CoreModule } from '@nx-nest-starter/core'
+import { CoreModule } from '@nx-nest-graphql/core'
 
 @Module({
   imports: [CoreModule],
