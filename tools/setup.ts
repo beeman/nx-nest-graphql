@@ -2,7 +2,7 @@ import * as chalk from 'chalk'
 import * as minimist from 'minimist'
 import * as inquirer from 'inquirer'
 import { readFileSync } from 'fs'
-import { join } from 'path'
+import { join, basename, dirname } from 'path'
 import { replaceInFile } from 'replace-in-file'
 
 const { magentaBright, gray } = chalk
@@ -34,7 +34,7 @@ async function setup() {
       type: 'input',
       name: 'scope',
       message: `Enter NPM Scope`,
-      default: () => args.scope || nxJson.npmScope,
+      default: () => args.scope || basename(process.cwd()),
       validate: validateScope,
     },
   ])
