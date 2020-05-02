@@ -5,10 +5,12 @@ import { Client } from 'pg'
 config()
 
 async function main() {
-  const client = new Client(process.env.DATABASE_URL)
+  const url = process.env.DATABASE_URL
+  const schema = url.split('=')[1]
+  const client = new Client(url)
   client.connect()
-  log(' Removing migrations table', process.env.DATABASE_URL)
-  await client.query(`truncate table "nx-nest-graphql"."_Migration"`)
+  log(' Removing migrations table', url)
+  await client.query(`truncate table "${schema}"."_Migration"`)
   client.end()
 }
 
