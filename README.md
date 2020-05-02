@@ -6,6 +6,8 @@ A starter with:
 - @nestjs/config
 - @nestjs/graphql
 
+- [nxplus](https://www.npmjs.com/package/nxplus)
+
 ## Usage
 
 - [Generate](https://github.com/beeman/nx-nest-graphql/generate) new project using this repo as template or
