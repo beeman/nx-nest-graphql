@@ -1,0 +1,28 @@
+name: Lint, Build and Test
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile --non-interactive
+      - name: Lint
+        run: yarn lint
+      - name: Build
+        run: yarn prisma:generate && yarn nx run-many --target build --all
+      - name: Test
+        run: yarn test
+#      - name: 'nx build'
+#        run: npm run nx affected -- --target=docker --all
+#        env:
+#          CI_REGISTRY: docker.pkg.github.com
+#          CI_PROJECT_PATH: ${{ github.repository }}
+#          CI_REGISTRY_USER: beeman
+#          CI_REGISTRY_PASSWORD: ${{ github.token }}
