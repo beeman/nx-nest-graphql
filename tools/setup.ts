@@ -9,6 +9,8 @@ async function main() {
   }
   exec(`yarn migrate:reset`)
   exec(`yarn migrate:save`)
+  exec(`yarn migrate:up`)
+  exec(`yarn prisma generate`)
   exec('nxplus scope:set')
 }
 

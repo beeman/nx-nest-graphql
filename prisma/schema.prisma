@@ -11,22 +11,24 @@ generator client {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
+  id        String   @id @default(uuid())
   createdAt DateTime @default(now())
   email     String   @unique
+  username  String   @unique
   name      String?
+  password  String?
   role      Role     @default(User)
   posts     Post[]
 }
 
 model Post {
-  id         Int        @id @default(autoincrement())
+  id         String     @id @default(uuid())
   createdAt  DateTime   @default(now())
   updatedAt  DateTime   @updatedAt
   published  Boolean    @default(false)
   title      String
   author     User?      @relation(fields:  [authorId], references: [id])
-  authorId   Int?
+  authorId   String?
 }
 
 enum Role {

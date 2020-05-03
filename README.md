@@ -5,7 +5,7 @@ A starter with:
 - NestJS v7
 - @nestjs/config
 - @nestjs/graphql
-
+- Username/Password Authentication (login/register)
 - [nxplus](https://www.npmjs.com/package/nxplus)
 
 ## Usage
