@@ -4,7 +4,7 @@ import { randomBytes } from 'crypto'
 
 export class AuthHelper {
   static randomToken = (size = 64) => randomBytes(size).toString('hex')
-  static formatEmail = (email: string = '') => email.trim().toLowerCase()
+  static formatEmail = (email = '') => email.trim().toLowerCase()
   static validate(password: string, hashedPassword: string): Promise<boolean> {
     return compare(password, hashedPassword)
   }

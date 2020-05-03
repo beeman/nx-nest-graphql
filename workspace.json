@@ -62,8 +62,10 @@
       "schematics": {},
       "architect": {
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@nrwl/linter:lint",
           "options": {
+            "linter": "eslint",
+            "config": "libs/core/.eslintrc",
             "tsConfig": ["libs/core/tsconfig.lib.json", "libs/core/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/core/**"]
           }
@@ -85,8 +87,10 @@
       "schematics": {},
       "architect": {
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@nrwl/linter:lint",
           "options": {
+            "linter": "eslint",
+            "config": "libs/data/.eslintrc",
             "tsConfig": ["libs/data/tsconfig.lib.json", "libs/data/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/data/**"]
           }
@@ -108,8 +112,10 @@
       "schematics": {},
       "architect": {
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@nrwl/linter:lint",
           "options": {
+            "linter": "eslint",
+            "config": "libs/auth/.eslintrc",
             "tsConfig": ["libs/auth/tsconfig.lib.json", "libs/auth/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/auth/**"]
           }
@@ -131,10 +137,12 @@
       "schematics": {},
       "architect": {
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@nrwl/linter:lint",
           "options": {
+            "linter": "eslint",
+            "config": "libs/sdk/.eslintrc",
             "tsConfig": ["libs/sdk/tsconfig.lib.json", "libs/sdk/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!libs/sdk/**"]
+            "exclude": ["**/node_modules/**", "!libs/sdk/**", "libs/sdk/src/**/generated/*"]
           }
         },
         "test": {
