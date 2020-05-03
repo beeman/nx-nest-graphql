@@ -18,7 +18,8 @@
     "paths": {
       "@nx-nest-graphql/core": ["libs/core/src/index.ts"],
       "@nx-nest-graphql/data": ["libs/data/src/index.ts"],
-      "@nx-nest-graphql/auth": ["libs/auth/src/index.ts"]
+      "@nx-nest-graphql/auth": ["libs/auth/src/index.ts"],
+      "@nx-nest-graphql/sdk": ["libs/sdk/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

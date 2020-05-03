@@ -1,0 +1,30 @@
+fragment UserDetails on User {
+  id
+  email
+  name
+  username
+}
+
+query Me {
+  me {
+    ...UserDetails
+  }
+}
+
+mutation Login($input: AuthLoginInput!) {
+  login(input: $input) {
+    token
+    user {
+      ...UserDetails
+    }
+  }
+}
+
+mutation Register($input: AuthRegisterInput!) {
+  register(input: $input) {
+    token
+    user {
+      ...UserDetails
+    }
+  }
+}

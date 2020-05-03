@@ -28,7 +28,9 @@
     "update": "nx migrate latest",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "sdk": "graphql-codegen --config codegen.yml",
+    "sdk:watch": "nodemon --watch 'libs/sdk/src/queries/**/**' --ext '*' -x 'yarn sdk'"
   },
   "private": true,
   "dependencies": {
@@ -52,6 +54,7 @@
     "rxjs": "^6.5.5"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "1.13.4",
     "@nestjs/schematics": "^7.0.0",
     "@nestjs/testing": "^7.0.9",
     "@nrwl/eslint-plugin-nx": "9.2.3",
@@ -79,6 +82,9 @@
     "ts-jest": "25.4.0",
     "ts-node": "^8.9.1",
     "tslint": "~6.1.2",
-    "typescript": "~3.8.3"
+    "typescript": "~3.8.3",
+    "@graphql-codegen/typescript": "1.13.4",
+    "@graphql-codegen/typescript-resolvers": "1.13.4",
+    "@graphql-codegen/introspection": "1.13.4"
   }
 }
