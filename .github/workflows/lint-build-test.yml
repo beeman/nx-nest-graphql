@@ -12,11 +12,12 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile --non-interactive
+#        run: yarn install --frozen-lockfile --non-interactive
+        uses: bahmutov/npm-install@v1
       - name: Lint
         run: yarn lint
       - name: Build
-        run: yarn prisma:generate && yarn nx run-many --target build --all
+        run: yarn prisma generate && yarn nx run-many --target build --all
       - name: Test
         run: yarn test
 #      - name: 'nx build'
