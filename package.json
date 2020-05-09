@@ -85,7 +85,7 @@
     "pg": "8.0.3",
     "prettier": "2.0.5",
     "replace-in-file": "6.0.0",
-    "ts-jest": "25.4.0",
+    "ts-jest": "25.5.1",
     "ts-node": "8.9.1",
     "typescript": "3.8.3"
   },
