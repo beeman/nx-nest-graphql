@@ -1561,10 +1561,12 @@
   resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.0.0-preview025.tgz#bf0f59f700dd25a621a4482f9d41cabfb4fe5958"
   integrity sha512-KZIHsrYUUfBu8QwCdhgUbEeaors4Kw1s8LTPOWSWsn8ErT7H2Z3MWKv/8vN25l6RfoU53U5SEYn9+GwiPx1Fqw==
 
-"@prisma/client@2.0.0-beta.4":
-  version "2.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.0.0-beta.4.tgz#fd94c3780108d9886c31526e85eba42369050f0c"
-  integrity sha512-LEtHIQVJrM7Y8H0G288sKxvsFv1od7tG8SiaWQvzv51AZo7IsK+n+wJ8A1/tJ6eL/7UQWHZQjZN7JLgpxetFvw==
+"@prisma/client@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.5.1.tgz#90285afad8f309ee0bf8e063543ae65546cb0725"
+  integrity sha512-vIyh6kyNNC7daePZRkrsxTF/xa8uA0bFpR4E9agyknzylGYFJqnjZCMTwtkXz64Vnlc55dMTCONNe/AFJ0UusQ==
+  dependencies:
+    pkg-up "^3.1.0"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -8900,6 +8902,13 @@ pkg-dir@^4.2.0:
   integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
   dependencies:
     find-up "^4.0.0"
+
+pkg-up@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-3.1.0.tgz#100ec235cc150e4fd42519412596a28512a0def5"
+  integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
+  dependencies:
+    find-up "^3.0.0"
 
 please-upgrade-node@^3.2.0:
   version "3.2.0"
