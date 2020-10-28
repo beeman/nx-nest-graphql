@@ -79,7 +79,7 @@
     "husky": "4.2.5",
     "inquirer": "7.1.0",
     "jest": "25.5.4",
-    "lint-staged": "10.2.2",
+    "lint-staged": "10.5.0",
     "minimist": "1.2.5",
     "nxplus": "1.1.4",
     "pg": "8.0.3",
